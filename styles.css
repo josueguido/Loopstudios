@@ -1,0 +1,82 @@
+@import url(https://fonts.google.com/specimen/Alata);
+@import url(https://fonts.google.com/specimen/Josefin+Sans);
+
+.root {
+    --White: hsl(0, 0%, 100%);
+    --BlackF: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+
+@media only screen and (max-width : 375px) {
+
+
+    body {
+
+    }
+
+    main {}
+
+
+    .title {}
+
+    .sct-1 {}
+
+    .interactive {}
+
+    .creations {}
+
+    .title-2 {}
+
+    footer {
+        
+    }
+
+    .media {}
+
+}
+
+
+
+
+@media screen and (min-width: 1000px) {
+
+
+    body {
+        font: 1em 'alata';
+        width: auto;
+        min-height: 100vh
+    }
+
+    main {
+
+    }
+
+  
+
+
+    .title {}
+
+    .sct-1 {}
+
+    .interactive {}
+
+    .creations {}
+
+    .title-2 {}
+
+    footer {
+        background-color: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    .media {
+        color: hsl(0, 0%, 100%);
+    }
+
+    .rights {
+        color:  hsl(0, 0%, 55%);
+    }
+}
+

@@ -17,7 +17,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 ### Links
 
 - Solution URL: [https://github.com/josueguido/Loopstudios]
-- Live Site URL: [Add live site URL here]
+- Live Site URL: [https://courageous-gumdrop-d5f534.netlify.app/]
 
 
 
@@ -32,8 +32,8 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ## Author
 
-- Website - [Josue Guido](https://www.your-site.com)
-- Frontend Mentor - [@JosueGuido](https://www.frontendmentor.io/profile/josueguido)
-- Twitter - [@JosueGuido](https://www.twitter.com/JosueGuido18)
+- Website - [https://courageous-gumdrop-d5f534.netlify.app/]
+- Frontend Mentor - [https://www.frontendmentor.io/profile/josueguido]
+- Twitter - [https://www.twitter.com/JosueGuido18]
 
 

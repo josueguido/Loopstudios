@@ -1,82 +1,811 @@
-@import url(https://fonts.google.com/specimen/Alata);
-@import url(https://fonts.google.com/specimen/Josefin+Sans);
-
-.root {
-    --White: hsl(0, 0%, 100%);
-    --BlackF: hsl(0, 0%, 0%);
-    --Dark-Gray: hsl(0, 0%, 55%);
-    --Very-Dark-Gray: hsl(0, 0%, 41%);
-}
+  @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
 
 
-@media only screen and (max-width : 375px) {
+  .root {
+      --White: hsl(0, 0%, 100%);
+      --Black: hsl(0, 0%, 0%);
+      --Dark-Gray: hsl(0, 0%, 55%);
+      --Very-Dark-Gray: hsl(0, 0%, 41%);
+  }
 
 
-    body {
 
+
+  @media only screen and (max-width : 377px) {
+
+      .desktop-img {
+          display: none;
+          /* Ocultar la imagen de escritorio en dispositivos móviles */
+      }
+
+      .mobile-img {
+          display: block;
+          /* Mostrar la imagen de móvil en dispositivos móviles */
+      }
+
+
+      .desktop-image {
+          display: none;
+          /* Ocultar la imagen en dispositivos móviles */
+      }
+
+      .mobile-image {
+          display: block;
+          /* Mostrar la imagen en dispositivos móviles */
+      }
+
+      /* Oculta el menú de navegación en dispositivos móviles */
+      .desktop-menu ul {
+          display: none;
+      }
+
+
+      .Interactive-desktop {
+          display: none;
+      }
+
+      .Interactive-mobile {
+          display: block;
+      }
+
+      /* Muestra el icono de hamburguesa en dispositivos móviles */
+      .hamburguer {
+          display: inline-block;
+      }
+
+      #Close {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          display: none;
+      }
+
+      .Hamburguer,
+      .close {
+          display: none;
+      }
+
+      body {
+          font-family: 'Alata', sans-serif;
+          height: auto;
+          width: auto;
+          position: relative;
+          margin: 0;
+      }
+
+      main {
+          margin: 15px;
+      }
+
+
+      header {
+          background-image: url('./images/mobile/image-hero.jpg');
+          background-size: cover;
+          color: #fff;
+          height: 600px;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .header-content {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-top: 30px;
+          width: 400px;
+          height: auto;
+      }
+
+
+      .header img {
+          max-width: auto;
+      }
+
+      .title {
+          align-items: center;
+          font-size: 2rem;
+          font-family: 'Josefin Sans';
+          text-align: start;
+          color: hsl(0, 0%, 100%);
+      }
+
+      #navbar {
+          color: hsl(0, 0%, 100%);
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      #navbar ul {
+          list-style: none;
+          padding: 15px;
+          margin: 5px;
+          display: none;
+          flex-direction: column;
+          align-items: center;
+      }
+
+
+
+      .paragraph {
+          font: 2rem 'Josefin Sans';
+          font-weight: 300;
+          display: flex;
+          align-items: center;
+          text-align: center;
+          text-transform: uppercase;
+          line-height: 3rem;
+          max-height: 9rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          border: 1px solid hsl(0, 0%, 100%);
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+          padding: 10px auto;
+          margin-top: 155px;
+      }
+
+      /* Sección de Interactive VR */
+      .stn {
+          margin-top: 50px;
+          display: flex;
+          flex-direction: column;
+          text-align: center;
+          height: auto;
+          width: auto;
+          font-family: 'Josefin Sans';
+      }
+
+      .text {
+          flex: 1;
+          height: auto;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .text h1 {
+          font: 1.5rem 'Josefin Sans';
+          font-weight: 300;
+          text-transform: uppercase;
+          line-height: 2rem;
+          max-height: 5rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .text h2 {
+          font: 1rem 'Josefin Sans';
+          font-weight: 400;
+          color: hsl(0, 0%, 0%);
+          line-height: 2rem;
+          max-height: 13rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 9;
+          -webkit-box-orient: vertical;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      .interactive {
+          width: auto;
+          height: auto;
+      }
+
+      .Interactive-mobile {
+        width: 100%; 
+        max-width: 300px; 
+        height: auto; 
+        display: block; 
+        margin: 0 auto; 
+      }
+
+      .title-button-container {
+          display: flex;
+          align-items: center;
+          flex-direction: column;
+          justify-content: center;
+          width: auto;
+          height: auto;
+      }
+
+      .title-2 {
+          font-family: 'Josefin Sans';
+          font-size: 2.8rem;
+          font-weight: 300;
+      }
+
+      .button {
+          background-color: hsl(0, 0%, 100%);
+          color: hsl(0, 0%, 0%);
+          height: 30px;
+          width: 100px;
+          font-family: 'Josefin Sans';
+          font-size: 0.80rem;
+          margin-bottom: 10px;
+      }
+
+      /* Sección de Creaciones */
+      .creations {
+          margin-top: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          width: auto;
+          height: auto;
+      }
+
+
+
+      figure {
+          position: relative;
+          display: inline-block;
+      }
+
+
+      
+
+      .image-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      img {
+          width: 300px;
+          height: auto;
+      }
+
+      figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: white;
+          padding: 5px;
+          font-size: 1rem;
+          font-family: 'Josefin Sans';
+          font-weight: 300;
+          display: flex;
+          line-height: 2rem;
+          max-height: 3.5rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+      }
+
+
+
+      /* Pie de página */
+      footer {
+          margin-top: 20px;
+          background-color: #1f1f1f;
+          color: #fff;
+          text-align: center;
+          padding: 20px 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+      }
+
+
+      .media-container {
+        display: flex;
+        flex-direction: column;
     }
+      /* Estilos para la clase .media */
+      .media {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+          padding: 10px;
+          background-color: #1f1f1f;
+          color: #fff;
 
-    main {}
+      }
+
+      /* Estilos para el párrafo dentro de .media */
+      .media p {
+          font-size: 1.5rem;
+          font-weight: 'Josefin Sans';
+          margin-bottom: 10px;
+          align-items: center;
+      }
+
+      /* Estilos para la navegación social */
+      #social-media {
+          margin-top: 20px;
+          align-items: center;
+          justify-content: space-between;
+      }
+
+      /* Estilos para los enlaces de redes sociales */
+      #social-media a {
+          margin-bottom: 20px;
+          text-decoration: none;
+      }
+
+      /* Estilos para las imágenes de redes sociales */
+      #social-media img {
+          width: 30px;
+          height: 30px;
+          margin-right: 15px;
+      }
+
+      /* Estilos para la clase .media-2 */
+      .media-2 {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+          padding: 20px;
+          background-color: #1f1f1f;
+          color: #fff;
+          margin-top: 20px;
+          
+      }
+
+      /* Estilos para la lista desordenada dentro de .media-2 */
+      .media-2 ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+      }
+
+      /* Estilos para los elementos de lista dentro de .media-2 */
+      .media-2 li {
+          margin-bottom: 10px;
+          font-family: 'Josefin Sans';
+      }
+
+      .rights {
+          color: hsl(0, 0%, 55%);
+          margin-left: 20px;
+      }
+
+  }
 
 
-    .title {}
-
-    .sct-1 {}
-
-    .interactive {}
-
-    .creations {}
-
-    .title-2 {}
-
-    footer {
-        
-    }
-
-    .media {}
-
-}
 
 
+  @media only screen and (min-width: 1000px) {
 
 
-@media screen and (min-width: 1000px) {
+      .desktop-img {
+          display: block;
+          /* Mostrar la imagen de escritorio por defecto */
+      }
+
+      .mobile-img {
+          display: none;
+          /* Ocultar la imagen de móvil por defecto */
+      }
+
+      #hamburger,
+      #Close {
+          display: none;
+      }
+
+      /* Estilo predeterminado para ambas imágenes */
+      .desktop-image {
+          display: block;
+          /* Mostrar la imagen en pantallas de escritorio */
+      }
+
+      .mobile-image {
+          display: none;
+          /* Ocultar la imagen en pantallas de escritorio */
+      }
+
+      .Interactive-desktop {
+          display: block;
+      }
+
+      .Interactive-mobile {
+          display: none;
+      }
+
+      body {
+          font-family: 'Alata', sans-serif;
+          width: auto;
+          height: 100vh;
+          position: relative;
+          margin: 0;
+          padding: 0;
+      }
 
 
-    body {
-        font: 1em 'alata';
-        width: auto;
-        min-height: 100vh
-    }
+      p {
+          font-family: 'Josefin Sans', sans-serif;
+      }
 
-    main {
+      main {
+          height: 100vh;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
 
-    }
+      }
 
-  
+      header {
+          position: relative;
+          background-image: url('./images/desktop/image-hero.jpg');
+          background-size: cover;
+          color: #fff;
+          height: 500px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          text-align: center;
+      }
 
 
-    .title {}
 
-    .sct-1 {}
+      .header-content {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          flex-grow: 1;
+          height: 100%;
+      }
 
-    .interactive {}
+      .header img {
+          max-width: 600%;
+      }
 
-    .creations {}
+      .title {
+          align-items: start;
+          font-size: 2rem;
+          font-family: 'Josefin Sans';
+          text-align: start;
+          color: hsl(0, 0%, 100%);
+          margin-top: 40px;
+          margin-left: 100px;
+      }
 
-    .title-2 {}
+      #navbar {
+          color: hsl(0, 0%, 100%);
+          margin-top: 40px;
+          margin-right: 100px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+      }
 
-    footer {
-        background-color: hsl(0, 0%, 0%);
-        color: hsl(0, 0%, 100%);
-    }
+      #navbar ul {
+          list-style-type: none;
+          display: flex;
+      }
 
-    .media {
-        color: hsl(0, 0%, 100%);
-    }
+      #navbar ul li {
+          display: inline;
+          margin-right: 20px;
+          font-weight: 'Alata';
+          cursor: pointer;
+          position: relative;
+      }
 
-    .rights {
-        color:  hsl(0, 0%, 55%);
-    }
-}
+      #navbar ul li:last-child {
+          margin-right: 0;
 
+      }
+
+      #navbar ul li:hover::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: hsl(0, 0%, 100%);
+
+      }
+
+      .paragraph {
+          font: 2.5rem 'Josefin Sans';
+          font-weight: 300;
+          display: flex;
+          line-height: 3rem;
+          max-height: 9rem;
+          overflow: hidden;
+          width: 300px;
+          height: 250px;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          border: 1px solid hsl(0, 0%, 100%);
+          padding: 40px;
+          box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.1);
+          margin-bottom: 100px;
+          margin-left: 140px;
+          text-align: center;
+          text-transform: uppercase;
+          padding-top: 10px;
+      }
+
+      /* Sección de Interactive VR */
+      .stn {
+          margin-top: 50px;
+          display: flex;
+          text-align: center;
+          height: auto;
+          width: auto;
+          display: flex;
+          font-family: 'Josefin Sans';
+      }
+
+      .text {
+          flex: 1;
+          margin-left: 20px;
+          height: auto;
+          width: auto;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: start;
+          padding-top: 150px;
+      }
+
+      .text h1 {
+          font: 2.5rem 'Josefin Sans';
+          font-weight: 300;
+          text-transform: uppercase;
+          line-height: 2.5rem;
+          max-height: 5rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 3;
+          -webkit-box-orient: vertical;
+          width: 400px;
+          height: 600px;
+      }
+
+      .text h2 {
+          font: 0.95rem 'Josefin Sans';
+          font-weight: 300;
+          color: hsl(0, 0%, 0%);
+          line-height: 1rem;
+          max-height: 4rem;
+          overflow: hidden;
+          width: 400px;
+          height: 600px;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+      }
+
+      .interactive {
+          padding-top: 50px;
+          padding-left: 70px;
+          max-width: 35%;
+          /* Ajusta el tamaño máximo de la imagen */
+          height: auto;
+          /* Mantiene la proporción de la imagen */
+      }
+
+      .title-button-container {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          height: auto;
+          padding-left: 220px;
+          padding-right: 220px;
+      }
+
+      .title-2 {
+          font-family: 'Josefin Sans';
+          font-size: 2.8rem;
+          font-weight: 300;
+          margin-right: 10px;
+      }
+
+      .button {
+          background-color: hsl(0, 0%, 100%);
+          color: hsl(0, 0%, 0%);
+          height: 30px;
+          width: 100px;
+          font-family: 'Josefin Sans';
+          font-size: 0.80rem;
+          margin-left: 10px;
+      }
+
+      button:hover {
+          cursor: pointer;
+          background-color: hsl(0, 0%, 0%);
+          color: hsl(0, 0%, 100%);
+      }
+
+      /* Sección de Creaciones */
+      .creations {
+          margin-top: 50px;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          width: 100%;
+          height: auto;
+      }
+
+      .image-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 10px;
+          max-width: 1000px;
+          margin: 0 auto;
+      }
+
+      .image-item {
+          text-align: center;
+      }
+
+      figure {
+          position: relative;
+          display: inline-block;
+      }
+
+      img {
+          max-width: 100%;
+          height: auto;
+      }
+
+      figcaption {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          color: white;
+          padding: 5px;
+          font-size: 1rem;
+          font-family: 'Josefin Sans';
+          font-weight: 300;
+          display: flex;
+          line-height: 2rem;
+          max-height: 3.5rem;
+          overflow: hidden;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+      }
+
+
+
+      /* Pie de página */
+      footer {
+          margin-top: 800px;
+          background-color: #1f1f1f;
+          color: #fff;
+          text-align: center;
+          padding: 20px 0;
+      }
+
+
+      /* Estilos para la clase .media */
+      .media {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          text-align: center;
+          padding: 15px 170px ;
+          background-color: #1f1f1f;
+          color: #fff;
+      }
+
+      /* Estilos para el párrafo dentro de .media */
+      .media p {
+          font-size: 1.5rem;
+          font-weight: 'Josefin Sans';
+          margin-bottom: 5px;
+          justify-content: space-around;
+      }
+
+      /* Estilos para la navegación social */
+      #social-media {
+          margin-top: 20px;
+          justify-content: space-between;
+          align-items: flex-start;
+
+      }
+
+      /* Estilos para los enlaces de redes sociales */
+      #social-media a {
+          margin-right: 20px;
+          text-decoration: none;
+          position: relative;
+      }
+
+      /* Estilos para las imágenes de redes sociales */
+      #social-media img {
+          width: 30px;
+          height: 30px;
+      }
+
+      #social-media a::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: hsl(0, 0%, 100%);
+          transform: scaleX(0);
+          /* Inicialmente, la línea estará oculta */
+          transform-origin: center;
+          /* El punto de origen es el centro para que la línea se expanda desde el centro */
+          transition: transform 0.3s ease;
+      }
+
+      #social-media a:hover::after {
+          transform: scaleX(1);
+      }
+
+
+
+      /* Estilos para la clase .media-2 */
+      .media-2 {
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-around;
+          text-align: center;
+          padding: 20px;
+          background-color: #1f1f1f;
+          color: #fff;
+          margin-top: 20px;
+          cursor: pointer;
+          position: relative;
+      }
+
+      /* Estilos para la lista desordenada dentro de .media-2 */
+      .media-2 ul {
+          list-style-type: none;
+          padding: 0;
+          margin: 0;
+      }
+
+      /* Estilos para los elementos de lista dentro de .media-2 */
+      .media-2 li {
+          display: inline;
+          justify-content: space-between;
+          margin-right: 20px;
+          font-family: 'Josefin Sans';
+          position: relative;
+
+      }
+
+      .media-2 li:hover::after {
+          content: "";
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background-color: hsl(0, 0%, 100%);
+      }
+
+
+      .rights {
+          color: hsl(0, 0%, 55%);
+          margin-left: 20px;
+      }
+
+
+  }

@@ -18,13 +18,13 @@
 </head>
 
 <body>
-    <header>
+    <header role="banner">
 
         <div class="header-content">
-            <div class="title">loopstudios</div>
-            <nav id="navbar">
-                <button id="hamburger">☰</button>
-                <button id="Close" style="display: none;">X</button>
+            <h1 class="title">loopstudios</h1>
+            <nav id="navbar" role="navigation">
+                <button id="hamburger" aria-label="Open Navigation">☰</button>
+                <button id="Close" style="display: none;" aria-label="Open Navigation">X</button>
                 <ul>
                     <li>About</li>
                     <li>Careers</li>
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-        <section class="stn">
+        <article class="stn">
             <img src="./images/desktop/image-interactive.jpg" class="Interactive-desktop" alt="Interactive">
             <img src="./images/mobile/image-interactive.jpg" class="Interactive-mobile" alt="Interactive">
             <div class="text">
@@ -51,12 +51,12 @@
                 </h2>
             </div>
 
-        </section>
+        </article>
         <section class="creations">
             <div class="title-button-container">
-                <p class="title-2">
+                <h2 class="title-2">
                     Our creations
-                </p>
+                </h2>
                 <button class="button">SEE ALL</button>
             </div>
             <div class="image-grid">
@@ -92,14 +92,14 @@
                 <div class="image-item">
                     <figure>
                         <img src="./images/desktop/image-from-above.jpg" alt="Road" class="desktop-img">
-                        <img src="./images/mobile/image-from-above.jpg" alt="Road" class="mobile-img"> 
+                        <img src="./images/mobile/image-from-above.jpg" alt="Road" class="mobile-img">
                         <figcaption>FROM UP ABOVE VR</figcaption>
                     </figure>
                 </div>
                 <div class="image-item">
                     <figure>
                         <img src="./images/desktop/image-pocket-borealis.jpg" alt="Borealis" class="desktop-img">
-                        <img src="./images/mobile/image-pocket-borealis.jpg" alt="Borealis" class="mobile-img" >
+                        <img src="./images/mobile/image-pocket-borealis.jpg" alt="Borealis" class="mobile-img">
                         <figcaption>POCKET BOREALIS</figcaption>
                     </figure>
                 </div>
@@ -150,10 +150,10 @@
                 © 2021 Loopstudios. All rights reserved.
             </span>
         </div>
-    
+
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
         Coded by <a href="#">Josue Guido</a>
-        
+
     </footer>
 
 </body>
